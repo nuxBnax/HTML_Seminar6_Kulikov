@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    max-width: 1600px;
+}
+.heading {
+    width: 100%;
+    height: 75px;
+    background-color: #222;
+}
