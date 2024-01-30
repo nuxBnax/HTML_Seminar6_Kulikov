@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
 }
 
 body {
@@ -52,20 +54,29 @@ body {
 }
 
 .text_col {
-    color: #222;
-
+    /* color: #222;
     font-size: 32px;
     font-style: normal;
+    line-height: normal; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 470px;
     font-weight: 700;
+}
+
+.text_col1 {
+    color: #222;
+    font-size: 32px;
+    font-style: normal;
+    /* font-weight: 700;
     line-height: normal;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
+    grid-template-columns: 50% 50%;
+    width: 600px; */
 }
 
 .text_col2 {
     color: #F16D7F;
-    font-family: Lato;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -73,9 +84,10 @@ body {
 }
 
 .brend_name {
-    width: 380px;
-    display: flex;
-    flex-direction: column;
+    /* width: 380px; */
+    display: block;
+    flex-direction: row;
+    text-align: left;
 }
 
 .product {
