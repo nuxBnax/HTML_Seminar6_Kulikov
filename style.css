@@ -16,9 +16,10 @@ body {
 
 .heading {
     display: flex;
-    width: 100%;
+    width: 100vw;
     background-color: #222;
 }
+
 .container {
     max-width: 1140px;
     margin: 0px auto;
@@ -29,11 +30,19 @@ body {
     align-content: center;
     justify-content: space-between;
     align-items: center;
-    gap: 456px;
+    gap: 700px;
 }
+
 .container2 {
-    width: 100%;
+    width: 100vw;
     background-color: #F1E4E6;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
 }
 
 .logo {
@@ -43,19 +52,12 @@ body {
     align-items: flex-end;
 }
 
-.menu__burger2 {
-    display: none;
-}
-
 .top__brend {
 
     width: 100%;
     display: flex;
-    gap: 64px;
     align-items: center;
-    /* margin-bottom: 65px; */
-    /* padding-left: calc(15% - 10px);
-    padding-right: calc(15% - 10px); */
+    justify-content: center;
 }
 
 .fig_brend {
@@ -84,11 +86,6 @@ body {
     color: #222;
     font-size: 32px;
     font-style: normal;
-    /* font-weight: 700;
-    line-height: normal;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    width: 600px; */
 }
 
 .text_col2 {
@@ -100,7 +97,6 @@ body {
 }
 
 .brend_name {
-    /* width: 380px; */
     display: block;
     flex-direction: row;
     text-align: left;
@@ -144,7 +140,7 @@ body {
 .content__card1 {
     width: 360px;
     height: 260px;
-    background-image: linear-gradient(90deg, rgba(33,22,22,0.5970763305322129) 100%, rgba(33,22,22,0.5970763305322129) 100%, rgba(33,22,22,0.7) 100%), url(img/top/girl_top.jpg);
+    background-image: linear-gradient(90deg, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.7) 100%), url(img/top/girl_top.jpg);
 
     text-align: center;
     display: flex;
@@ -186,7 +182,7 @@ body {
 .content__card2 {
     width: 360px;
     height: 260px;
-    background-image:linear-gradient(90deg, rgba(33,22,22,0.5970763305322129) 100%, rgba(33,22,22,0.5970763305322129) 100%, rgba(33,22,22,0.7) 100%), url(img/top/Man_top.png);
+    background-image: linear-gradient(90deg, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.7) 100%), url(img/top/Man_top.png);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -197,7 +193,7 @@ body {
 .content__card3 {
     width: 360px;
     height: 260px;
-    background-image: linear-gradient(90deg, rgba(33,22,22,0.5970763305322129) 100%, rgba(33,22,22,0.5970763305322129) 100%, rgba(33,22,22,0.7) 100%), url(img/top/boy.png);
+    background-image: linear-gradient(90deg, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.7) 100%), url(img/top/boy.png);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -208,7 +204,7 @@ body {
 .content__card_big {
     width: 1140px;
     height: 180px;
-    background-image: linear-gradient(90deg, rgba(33,22,22,0.5970763305322129) 100%, rgba(33,22,22,0.5970763305322129) 100%, rgba(33,22,22,0.7) 100%), url(img/top/shoose.png);
+    background-image: linear-gradient(90deg, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.7) 100%), url(img/top/shoose.png);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -320,15 +316,18 @@ p {
 @media(min-width:768px) and (max-width:1024px) {
 
     .heading {
-        /* width: 78%; */
+
         flex-direction: row;
         align-content: center;
         justify-content: space-between;
         align-items: center;
-        /* padding-left: calc(5% - 10px);
-        padding-right: calc(5% - 10px); */
     }
+
     .container {
+        width: 100%;
+        gap: 0;
+    }
+    .container2 {
         width: 100%;
     }
     .top__brend {
@@ -419,6 +418,7 @@ p {
         background-size: 734px;
     }
 }
+
 @media(min-width:320px) and (max-width:767px) {
     .heading {
         width: 100%;
@@ -432,25 +432,35 @@ p {
         align-items: center;
         /* padding-left: 15px;
         padding-right: 15px; */
-         gap: 215px;
-    }  
+        gap: 215px;
+    }
+
     .container {
         width: 100%;
-    } 
+        gap: 0;
+    }
+    .container2 {
+        width: 100%;
+    }
+
     .top__brend {
         height: 343px;
         justify-content: center;
-    } 
-    .menu__burger {
-        display: none;
     }
-    .menu__burger2 {
+
+    .menu__burger {
         display: block;
     }
-    .img_man {
-        display: none; 
+
+    .menu__burger2 {
+        display: none;
     }
-    .top__content {  
+
+    .img_man {
+        display: none;
+    }
+
+    .top__content {
         display: flex;
         gap: 32px;
         margin-bottom: 56px;
@@ -470,12 +480,18 @@ p {
     }
 
     .size320-767_2 {
-        width: 343px;
+        width: 360px;
         height: 111px;
-    } 
+    }
+    .size320-767 {
+        width: 360px;
+        height: 260px;
+    }
+
     .top__button {
         margin-top: 181px;
     }
+
     .fig_brend {
         display: flex;
         height: 70px;
@@ -497,6 +513,12 @@ p {
     }
 
     .text_col {
-        width: 295px;;
+        width: 295px;
+        ;
     }
+    .content__card_big {
+        margin-top: 0;
+    }
+    
+
 }
