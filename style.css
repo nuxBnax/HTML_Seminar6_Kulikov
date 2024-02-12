@@ -7,7 +7,7 @@
 
 body {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -313,6 +313,190 @@ p {
     line-height: normal;
 }
 
+.top__button:hover {
+    background-color: #FF6A6A;
+    color: #fff;
+}
+
+.buttom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.but_cent {
+    background-color: #222224;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.services {
+    background-color: #222224;
+    height: 341px;
+    width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.mid_buttom {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+
+}
+
+.subscribe {
+    background-image: url(img/buttom/serfer_lg.png);
+    height: 448px;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 359px;
+}
+
+.mid_but_cent {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    background-color: #e9e9e9;
+}
+
+.ser {
+    color: #FBFBFB;
+}
+
+.ser1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FBFBFB;
+    width: 360px;
+}
+
+.img_ser {
+    margin-bottom: 28px;
+}
+
+.img_ser1 {
+    margin-bottom: 19px;
+}
+
+.img_ser2 {
+    margin-bottom: 25px;
+}
+
+.foot {
+    background-color: #222224;
+    height: 79px;
+    width: 100%;
+}
+
+.sub {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #222224;
+    text-align: center;
+}
+
+.img_mid_but {
+    margin-bottom: 30px;
+
+}
+
+.sub1_mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+    gap: 10px;
+}
+
+.text_sub1 {
+    font-size: 24px;
+    color: #222224;
+    font-weight: 700;
+}
+
+.text1_sub1 {
+    font-size: 18px;
+    color: #222224;
+    font-weight: 700;
+}
+
+.inp {
+    height: 49px;
+    background-color: #E1E1E1;
+    border: none;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    width: 256px;
+}
+
+.btn {
+    height: 49px;
+    background-color: #F16D7F;
+    border: none;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    width: 100px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+.form {
+    display: flex;
+}
+.foot {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+.div_logo {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;   
+}
+.div_logo:hover {
+    background-color: #F16D7F;
+    fill: white;
+}
+.div_logo:hover + .img_f{
+    fill: white;
+}
+.foot_logo {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.text_foot {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fbfbfb;
+}
+
 @media(min-width:768px) and (max-width:1024px) {
 
     .heading {
@@ -327,9 +511,11 @@ p {
         width: 100%;
         gap: 0;
     }
+
     .container2 {
         width: 100%;
     }
+
     .top__brend {
         width: 86%;
         min-width: 762px;
@@ -439,6 +625,7 @@ p {
         width: 100%;
         gap: 0;
     }
+
     .container2 {
         width: 100%;
     }
@@ -483,6 +670,7 @@ p {
         width: 360px;
         height: 111px;
     }
+
     .size320-767 {
         width: 360px;
         height: 260px;
@@ -516,9 +704,10 @@ p {
         width: 295px;
         ;
     }
+
     .content__card_big {
         margin-top: 0;
     }
-    
+
 
 }
