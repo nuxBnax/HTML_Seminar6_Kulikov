@@ -113,9 +113,11 @@ body {
     font-size: 14px;
     font-weight: 400;
 }
+
 ul {
     margin-bottom: 20px;
 }
+
 .logo {
     display: inline-flex;
     gap: 41px;
@@ -362,6 +364,132 @@ ul {
     height: 420px;
 }
 
+.basket {
+    display: none;
+    width: 140px;
+    height: 44px;
+    color: #FFFFFF;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    border: 2px white;
+}
+
+.img_bg_man {
+    width: 360px;
+    height: 420px;
+    background-image: url(img/top/man.jpg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_bg_girl {
+    background-image: url(img/top/Girl.png);
+    width: 360px;
+    height: 420px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_bg_man_hat {
+    background-image: url(img/top/Man_hat.png);
+    width: 360px;
+    height: 420px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_bg_berad {
+    background-image: url(img/top/Berad.png);
+    width: 360px;
+    height: 420px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_bg_girl_b {
+    background-image: url(img/top/Girl_blue.png);
+    width: 360px;
+    height: 420px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_bg_girl_bl {
+    background-image: url(img/top/Girl_black.png);
+    width: 360px;
+    height: 420px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_bg_man:hover .basket {
+    display: block;
+}
+
+.img_bg_girl:hover .basket {
+    display: block;
+}
+
+.img_bg_man_hat:hover .basket {
+    display: block;
+}
+
+.img_bg_berad:hover .basket {
+    display: block;
+}
+
+.img_bg_girl_b:hover .basket {
+    display: block;
+}
+
+.img_bg_girl_bl:hover .basket {
+    display: block;
+}
+
+.img_bg_man:hover {
+    background-image: linear-gradient(90deg, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.7) 100%), url(img/top/man.jpg);
+}
+
+.img_bg_girl:hover {
+    background-image: linear-gradient(90deg, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.7) 100%), url(img/top/Girl.png);
+}
+
+.img_bg_man_hat:hover {
+    background-image: linear-gradient(90deg, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.7) 100%), url(img/top/Man_hat.png);
+}
+
+.img_bg_berad:hover {
+    background-image: linear-gradient(90deg, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.7) 100%), url(img/top/Berad.png);
+}
+
+.img_bg_girl_b:hover {
+    background-image: linear-gradient(90deg, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.7) 100%), url(img/top/Girl_blue.png);
+}
+
+.img_bg_girl_bl:hover {
+    background-image: linear-gradient(90deg, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.5970763305322129) 100%, rgba(33, 22, 22, 0.7) 100%), url(img/top/Girl_black.png);
+}
+
 p {
     color: #5D5D5D;
     font-size: 14px;
@@ -421,6 +549,7 @@ p {
 
 .subscribe {
     background-image: url(img/buttom/serfer_lg.png);
+    background-size: 100% auto;
     height: 448px;
     width: 100%;
     max-width: 1600px;
@@ -576,7 +705,6 @@ p {
 @media(min-width:768px) and (max-width:1024px) {
 
     .heading {
-
         flex-direction: row;
         align-content: center;
         justify-content: space-between;
@@ -590,6 +718,10 @@ p {
 
     .container2 {
         width: 100%;
+    }
+
+    .dropdown-content {
+        right: -110px;
     }
 
     .top__brend {
@@ -679,6 +811,31 @@ p {
         height: 116px;
         background-size: 734px;
     }
+
+    .services {
+        display: flex;
+        padding-top: 30px;
+        align-content: space-around;
+        justify-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 530px;
+    }
+    .subscribe {
+        background-image: url(img/buttom/serfer_m.png);
+        background-size: 100% auto;
+        height: 614px;
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    body {
+        display: flex;
+    }
 }
 
 @media(min-width:320px) and (max-width:767px) {
@@ -705,7 +862,10 @@ p {
     .container2 {
         width: 100%;
     }
-
+    .dropdown-content {
+        right: 0px;
+        top: 22px;
+    }
     .top__brend {
         height: 343px;
         justify-content: center;
@@ -778,12 +938,34 @@ p {
 
     .text_col {
         width: 295px;
-        ;
     }
 
     .content__card_big {
         margin-top: 0;
     }
-
+    .services {
+        display: flex;
+        padding-top: 30px;
+        align-content: space-around;
+        justify-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 530px;
+    }
+    .subscribe {
+        background-image: url(img/buttom/serfer_m.png);
+        background-size: 100% auto;
+        height: 614px;
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    body {
+        display: flex;
+    }
 
 }
