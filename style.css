@@ -638,6 +638,8 @@ p {
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
     width: 256px;
+    text-align: center;
+    padding-left: 15px;
 }
 
 .btn {
@@ -953,7 +955,7 @@ p {
         height: 530px;
     }
     .subscribe {
-        background-image: url(img/buttom/serfer_m.png);
+        background-image: url(img/buttom/serfer_s.png);
         background-size: 100% auto;
         height: 614px;
         width: 100%;
@@ -962,10 +964,21 @@ p {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 40px;
+        gap: 57px;
     }
     body {
         display: flex;
+    }
+    .foot {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        gap: 23px;
+        padding-top: 13px;
     }
 
 }
