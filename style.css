@@ -693,10 +693,9 @@ p {
 
 .div_logo:hover {
     background-color: #F16D7F;
-    fill: white;
 }
 
-.icon:hover path {
+.div_logo:hover .icon {
     fill: white;
 }
 
